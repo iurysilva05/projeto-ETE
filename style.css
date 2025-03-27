@@ -1,0 +1,115 @@
+body{
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  background-color: #333; 
+  
+
+}
+
+nav ul {
+  display: flex;
+  
+  
+}
+
+nav li{
+  
+  padding: 30px;
+  list-style-type: none;
+  
+}
+
+header{
+margin: 3px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  
+  height: 100px;
+  background-color: #2F4F4F;
+}
+img{
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  
+}
+
+div{
+  display: flex;
+  align-items: center;
+}
+
+a{
+  color: gold;
+  text-decoration: none;
+  display: inline-block; /* Necessário para aplicar transform */
+  transition: transform 0.3s ease, color 0.3s ease; /* Suaviza o movimento */
+}
+
+a:hover{
+  cursor: pointer;
+  color: darkgoldenrod;
+  transform: translateY(-5px);/* Move o texto 5px para cima */
+}
+
+
+input{
+  border-radius: 8px;
+  display: inline-block; /* Necessário para aplicar transform */
+  transition: transform 0.3s ease, color 0.3s ease; /* Suaviza o movimento */
+  
+}
+
+
+input:hover{
+  transform: translateY(-3px);/* Move o texto 5px para cima */
+  cursor: pointer;
+
+}
+
+
+.img-compr {
+
+  position: absolute;
+  top: 40%;
+  left: 10px;
+  gap: 20px;
+  padding: 20px;
+  
+}
+
+.imagem-item {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza o movimento e sombra */
+}
+
+.imagem-item img {
+  width: 200px; 
+  height: auto;
+  border-radius: 8px; 
+}
+
+.imagem-item:hover {
+  transform: scale(1.1) translateY(-10px); /* Efeito de aumento e movimento para cima */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+  cursor: pointer;
+}
+
+.imagem-item .infw  {
+  
+  font-size: 10px; 
+  color: #333; 
+  font-weight: bold; 
+}
+
+span{
+  color: beige;
+}
+
+.preco{
+color: yellow;
+}
