@@ -22,19 +22,34 @@ nav li{
 }
 
 header{
-margin: 3px;
+  margin: 3px;
   justify-content: space-between;
   display: flex;
   align-items: center;
+  width: 100%;
   
   height: 100px;
   background-color: #2F4F4F;
 }
-img{
+.logo{
   width: 200px;
   height: 200px;
   object-fit: contain;
   
+}
+.combo{
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  border: 3px solid black;
+  height: 470px;
+  background-color: #000000;
+}
+
+.combo img{
+  height: 600px;
+  width: 70%;
+  margin-top: -40px;
 }
 
 div{
@@ -60,6 +75,8 @@ input{
   border-radius: 8px;
   display: inline-block; /* Necessário para aplicar transform */
   transition: transform 0.3s ease, color 0.3s ease; /* Suaviza o movimento */
+  outline: none;
+  padding: 3px;
   
 }
 
@@ -71,47 +88,53 @@ input:hover{
 }
 
 
-.img-compr {
+.img-compr  {
 
   position: absolute;
-  top: 40%;
-  left: 10px;
+  top: 140%;
+  left: 15%;
   gap: 20px;
   padding: 20px;
   
 }
 
-.imagem-item {
+.img-compr2{
+  position: absolute;
+  gap: 20px;
+  top: 80%;
+  left: 15%;
+  padding: 20px;
+
+}
+
+.imagem-item, .imagem-item2 {
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza o movimento e sombra */
 }
 
-.imagem-item img {
-  width: 200px; 
+
+
+.imagem-item img, .imagem-item2 img {
+  width: 250px; 
   height: auto;
   border-radius: 8px; 
 }
 
-.imagem-item:hover {
+.imagem-item:hover, .imagem-item2:hover {
   transform: scale(1.1) translateY(-10px); /* Efeito de aumento e movimento para cima */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
   cursor: pointer;
 }
 
-.imagem-item .infw  {
-  
-  font-size: 10px; 
-  color: #333; 
-  font-weight: bold; 
-}
+
 
 span{
   color: beige;
 }
 
 .preco{
-color: yellow;
+  color: yellow;
 }
 
 .icolupa{
